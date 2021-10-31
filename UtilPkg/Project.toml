@@ -1,0 +1,13 @@
+name = "UtilPkg"
+uuid = "c2f25aa4-312e-4cd5-919d-fe6dd4383c58"
+authors = ["zazbone <coczaz@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

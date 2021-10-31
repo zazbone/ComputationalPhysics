@@ -84,6 +84,7 @@ end
 
 # ╔═╡ 1dea0b53-fc17-43f3-b1df-495fff0529e9
 begin
+	# Exercice 1.2
 	x = collect(2:8) # Weird result betwin 7 ~ 14
 	func = [trapezoid, simpson, bode]
 	y = Array{Float64}(undef, (length(func), length(x)))
@@ -95,6 +96,28 @@ begin
 	plot(x, y', label=["trap" "simp" "bode"])
 end
 
+# ╔═╡ 76f93ada-aa5a-4b6b-abed-f006dbe6f89a
+# Exercice 1.3
+md"""
+
+The function: $t^{-2/3} (1 - t) ^{-1/3)}$ have 2 singularity 0 and 1
+
+We will need ton transform is integrale to be able to compute it
+
+First we spliting the integral into two part
+
+$$\int_0^1 t^{-2/3} (1 - t) ^{-1/3)} = \int_0^{0.5} t^{-2/3} (1 - t) ^{-1/3dt + \int_{0.5}^1 t^{-2/3} (1 - t) ^{-1/3}dt$$
+
+Now we have isolated the singularities. Now let change variables
+
+
+"""
+
+# ╔═╡ 46f5c4bb-8f93-4c32-81ea-717a05232aec
+begin
+
+end
+
 # ╔═╡ Cell order:
 # ╟─88843947-6008-41cc-b204-3f822e542ae3
 # ╠═39da52d0-3e5b-4dad-9de9-6a8b0337f124
@@ -104,3 +127,5 @@ end
 # ╠═7aa7729a-9c6c-457b-a271-8cd0775a65bf
 # ╠═c1449e54-2bfa-4fce-a7b4-227451327b48
 # ╠═1dea0b53-fc17-43f3-b1df-495fff0529e9
+# ╠═76f93ada-aa5a-4b6b-abed-f006dbe6f89a
+# ╠═46f5c4bb-8f93-4c32-81ea-717a05232aec
